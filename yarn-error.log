@@ -1,0 +1,109 @@
+Arguments: 
+  E:\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  D:\dev\android\android-sdk\tools\;D:\dev\android\android-sdk\platform-tools\;C:\Users\Administrator\AppData\Roaming\npm\node_modules;E:\nodejs;E:\Git\bin;E:\MAVEN\apache-maven-3.3.9\bin;D:\dev\jdk\jdk1.8.0_51\bin;D:\dev\jdk\jdk1.8.0_51\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;D:\xsf\pf\CA\PEC\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\xsf\productsvn\VisualSVN Server\bin;D:\xsf\pf\TortoiseSVN\bin;F:\APPCAN\pf\TortoiseGit\bin;E:\nodejs\;C:\Users\Administrator\AppData\Roaming\npm
+
+Yarn version: 
+  0.23.4
+
+Node version: 
+  4.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "generator-jhipster-xsf",
+    "version": "0.0.0",
+    "description": "jhipster定制化",
+    "homepage": "xsf.com",
+    "author": {
+      "name": "shengfa.xiao",
+      "email": "shengfa.xiao@10020.cn",
+      "url": "xsf.com"
+    },
+    "files": [
+      "generators"
+    ],
+    "main": "generators/index.js",
+    "keywords": [
+      "",
+      "yeoman-generator"
+    ],
+    "devDependencies": {
+      "yeoman-test": "^1.7.0",
+      "yeoman-assert": "^3.1.0",
+      "nsp": "^2.6.3",
+      "eslint": "^4.1.0",
+      "prettier": "^1.7.0",
+      "husky": "^0.14.3",
+      "lint-staged": "^4.2.1",
+      "eslint-config-prettier": "^2.4.0",
+      "eslint-plugin-prettier": "^2.2.0",
+      "eslint-config-xo": "^0.18.2",
+      "jest": "^21.0.0",
+      "jest-cli": "^21.0.0"
+    },
+    "dependencies": {
+      "yeoman-generator": "^2.0.1",
+      "chalk": "^2.1.0",
+      "yosay": "^2.0.1"
+    },
+    "jest": {
+      "testEnvironment": "node"
+    },
+    "scripts": {
+      "prepublish": "nsp check",
+      "pretest": "eslint .",
+      "precommit": "lint-staged",
+      "test": "jest"
+    },
+    "lint-staged": {
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.json": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "eslintConfig": {
+      "extends": [
+        "xo",
+        "prettier"
+      ],
+      "env": {
+        "jest": true,
+        "node": true
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "printWidth": 90
+          }
+        ]
+      },
+      "plugins": [
+        "prettier"
+      ]
+    },
+    "repository": "xiaoshengfa@gmail.com/generator-jhipster-xsf",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.61.173:443
+      at Object.exports._errnoException (util.js:907:11)
+      at exports._exceptionWithHostPort (util.js:930:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1077:14)
